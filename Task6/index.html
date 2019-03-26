@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Фильтр</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="filter" id="filter">
+    <div class="filterLine">
+      <div class="inputDiv">
+        <input class="inputFilter inputType" value="Text-field" type="text" list="typeOfSymbols" readonly>
+        <div class="typeOptions">
+          <ul>
+            <li>Text-field</li>
+            <li>Number-field</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="inputDiv">
+        <input class="inputFilter inputAction" value="Containing" type="text" list="action" readonly>
+        <div class="typeOptions">
+          <ul>
+            <li>Containing</li>
+            <li>Exactly matching</li>
+            <li>Begins with</li>
+            <li>Ends with</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-group text-input">
+        <input type="text" value="" class="inputText">
+      </div>
+
+      <div class="close">
+        <button class="buttonClose">x</button>
+      </div>
+    </div>
+
+    <div class="adding">
+      <button class="addButton"><strong>+</strong> Add condition</button>
+    </div>
+  </div>
+  <div class="mainButtons">
+    <button class="mainButton applyButton">Apply</button>
+    <button class="mainButton clearButton">Clear filter</button>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

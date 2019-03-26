@@ -1,0 +1,157 @@
+body {
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.filter {
+  display: inline-block;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+  padding-bottom: 20px;
+}
+
+.filterLine {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.inputFilter, .inputText {
+  width: 150px;
+  height: 28px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  border-radius: 5px;
+  padding: 1px;
+  padding-left: 10px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.76);
+  background-color: #ffffff;
+}
+
+.inputText {
+  margin-left: 5px;
+}
+
+.inputDiv {
+  position: relative;
+}
+
+.inputDiv:nth-child(2n) {
+  margin-left: 5px;
+}
+
+.inputDiv:after {
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 6px;
+  right: 10px;
+  background: url(arrowDown.png) no-repeat;
+  background-size: cover;
+  content: '';
+}
+
+.typeOptions {
+  position: absolute;
+  display: none;
+  top: 40px;
+  width: 150px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  border-radius: 3px;
+  margin: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.typeOptions>ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.typeOptions>ul>li {
+  margin: 0;
+  padding: 5px 0px 5px 10px;
+  list-style: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.typeOptions>ul>li:hover {
+  background-color: #94cef5a8;
+}
+
+.addButton {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: #4893d1;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  color: #3370a1;
+}
+
+.close {
+  margin-left: 5px;
+}
+
+.buttonClose {
+  margin-top: -2px;
+  padding: 0;
+  width: 20px;
+  height: 25px;
+  font-size: 26px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.addButton:active, .addButton:focus, .buttonClose:active, .buttonClose:focus {
+  outline: none;
+  border: none;
+}
+
+.addButton strong {
+  font-size: 20px;
+}
+
+.mainButtons {
+  margin-top: 8px;
+}
+
+.mainButton {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 3px 15px 3px 15px;
+}
+
+.applyButton {
+  border: none;
+  background-color: #57ace6;
+  color: #ffffff;
+}
+
+.clearButton {
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #252525c7;
+}
+
+.mainButton:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.mainButton:focus {
+  outline: none;
+}
